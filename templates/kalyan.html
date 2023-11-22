@@ -3,17 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Generic kalyan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <center>
-        <h2>generic kalyan</h2>
+    <header>
+        <h1>Generic kalyan</h1>
+    </header>
 
-        <a href="{% url 'preetam' %}">preetam</a>
-        <a href="{% url 'kalyan' %}">kalyan</a>
-
-        <a href="{% url 'specific:sibu' %}">sibu</a>
-        <a href="{% url 'specific:dani' %}">dani</a>
-    </center>
+    <nav>
+        <center>
+            <a href="{% url 'preetam' %}">preetam</a>
+            <a href="{% url 'kalyan' %}">kalyan</a>
+            <a href="{% url 'specific:sibu' %}">sibu</a>
+            <a href="{% url 'specific:dani' %}">dani</a>
+        </center>
+    </nav>
 </body>
 </html>
